@@ -4,26 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-image: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3YxMDc3LWJnLTAwNC5qcGc.jpg");
+            background-size:cover ;
+            background-position: center;
+            
+        
+        }
+        .page
+        {
+            color:aliceblue;
+            margin: auto;
+            margin-top: 5%;
+            width:25%;
+            border-radius: 19%;
+            padding: 9px;
+            backdrop-filter: blur(20px);
+            /* background-color:rgb(24, 30, 28); */
+            text-align: center;
+            border: solid;
+            border-color: rgb(209, 229, 246);
+        }
+        .heading
+        {
+           color: rgb(236, 240, 248);
+            /* margin:15% 50% 7% 50%; */
+            
+            padding: 0px;
+            /* font-family: "DynaPuff", system-ui;
+            font-optical-sizing: auto;
+            font-weight: 450px;
+            font-style: normal;
+            font-variation-settings:"wdth" 87.5; */
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 150%;
+            height:auto
+            
+            }
+            .fields
+            {
+                /* margin:0% 50% 10% 20%; */
+                color: rgb(242, 244, 253);
+                font-weight: bold;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                border:none;
+                
+            }
+            .fields input{
+                border:none;
+                border-bottom: solid;
+                border-color: rgb(217, 232, 251);
+                background: transparent;
+                
+                /* color: rgb(255, 255, 255); */
+               
+                
+            }
+            .fields ::placeholder
+            {
+                color: rgb(237, 246, 243);
+            }
+
+            .fields textarea
+            {
+                border:none;
+                border-bottom: solid;
+                border-color: #d3ddfb;
+                background: transparent;
+            }
+            .fields button
+            {
+                border-radius: 45%; 
+               border:solid;
+               color: rgb(8, 52, 52);
+               background-color:rgba(0, 5, 9, 0.399);
+               width: 150px;
+               height: 30%;
+               color: aliceblue;
+               font-size: 25px;
+            }
+            .dob{
+                color:rgb(242, 244, 253);
+            }
+        
+    </style>
 </head>
 <body>
-    <form action="./login.html">
-    <h1><i>Register</i></h1>
-    
+    <form class="page" action="./login.html">
+        <div class="heading"><h1><i>Register</i></h1>
+        </div>
+    <div class="fields">
     <div>Name:
-        <input type="text" name="name" id="name" required placeholder="Enter your full name"/>
+        <input type="text" class="fields" id="name" required placeholder="Enter your full name"/>
     </div>
 
     <br>
     <div>Email Id:
-        <input type="email" name="email" id="email" required placeholder="Enter your email"/>
+        <input type="email" class="fields" id="email" required placeholder="Enter your email"/>
     </div>
     <br>
     <div>Password:
-        <input type="password" name="password" id="password" required placeholder="set your password"/>
+        <input type="password" class="fields" id="password" required placeholder="Set your password"/>
     </div>
     <br>
-    <div>Confirm Password
-        <input type="password" name="confirm_pass" id="confirm_pass" required placeholder="re-enter your password" />
+    <div>Confirm Password:
+        <input type="password" class="fields" name="confirm_pass" id="confirm_pass" required placeholder="Re-enter your password" />
     </div>
     <br>
     <div>Gender:
@@ -32,19 +121,20 @@
     </div>
     <br>
     <div>Mobile Number:
-        <input type="number" name="mobile" id="mobile" required placeholder="enter your number">
+        <input type="number" class="fields" name="mobile" id="mobile" required placeholder="Enter your number">
     </div>
     <br>
     <div>Date Of Birth:
-        <input type="date" name="dob" id="dob" required> 
+        <input type="date" class="fields" name="dob" id="dob" required> 
     </div>
     <br>
-    <div>Address:
-        <textarea name="address" id="address" required placeholder="enter your home address"></textarea>
+    <div name="add">Address:
+        <textarea name="address" class="fields" id="address" required placeholder="Enter your Address here"></textarea>
     </div>
     <br>
     <div>
         <button>Submit</button>
+    </div>
     </div>
     </form>
 </body>
